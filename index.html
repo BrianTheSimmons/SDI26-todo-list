@@ -11,12 +11,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>Todo List</h1>
-    <ul>
-      <li>
-
+    <h1>To-Do-List</h1>
+    <ul class="to-do-list">
+      <li class="to-do">
+        <!-- Check off to-do by clicking text -->
+         <p class="to-do-text">Feed the cat</p>
+         <!-- Delete to-do -->
+         <input type="checkbox" class="delete">
       </li>
     </ul>
+    <input type="text" id="task-input" placeholder="Add new task..."/>
+    <button id="Addtaskbttn">Add Task</button>
   </div>
 
   <!-- javaScript File -->

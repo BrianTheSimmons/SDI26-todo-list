@@ -1,0 +1,16 @@
+{
+  "name": "sdi26-todo-list",
+  "version": "0.0.0",
+  "description": "SDI 26 js To-Do List Created by Brian Simmons and Jordan Tolbert",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server ."
+  },
+  "keywords": [],
+  "author": "Brian Simmons & Jordan Tolbert",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
