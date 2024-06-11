@@ -15,7 +15,8 @@ const taskInput = document.getElementById('task-input');
 
 
 // Add task when new task button is pressed
-function addTask(){
+function addTask(e){
+  e.preventDefault();
   // Create li
   let li = document.createElement('li');
   // add to-do class to li
