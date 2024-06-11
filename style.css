@@ -18,8 +18,9 @@ h1{
 }
 .to-do-text{
     display: inline;
+    margin-right: 20px;
 }
-.to-do-list{
+#to-do-list{
     margin-bottom: 10px;
     list-style-type: none;
 }
