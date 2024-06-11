@@ -15,10 +15,18 @@ body {
 }
 h1{
     margin-bottom: 20px;
+    font-size: 3rem;
+}
+.to-do{
+  margin: 10px 0;
 }
 .to-do-text{
     display: inline;
     margin-right: 20px;
+    font-size: 1.5rem;
+}
+.to-do-text:hover{
+  cursor: pointer;
 }
 #to-do-list{
     margin-bottom: 10px;
@@ -38,6 +46,9 @@ h1{
 }
 #addtaskbttn:hover {
   cursor: pointer;
+  padding: 15px 35px;
+  background-color:#94C595 ;
+  color: #747C92;
 }
 #task-input{
     color: #94C595;
@@ -45,15 +56,13 @@ h1{
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
 }
 input::placeholder {
   color: #94C595;
 }
 input:focus {
   outline: none;
-}
-.delete {
-  vertical-align: middle;
 }
 .delete:hover {
   cursor: pointer;

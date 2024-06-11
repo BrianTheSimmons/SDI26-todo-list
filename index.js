@@ -36,16 +36,18 @@ function addTask(){
     return;
   }
 
-  // Create checkbox
-  let checkbox = document.createElement('input');
-  checkbox.type = "checkbox";
+  // Create trashcan
+  let trashcan = document.createElement('i');
+  trashcan.classList.add('fa-solid');
+  trashcan.classList.add('fa-trash');
+  trashcan.classList.add('delete');
 
-  // add delete class to checkbox
-  checkbox.classList.add('delete')
+  // add delete class to trashcan
+  trashcan.classList.add('delete')
 
-  // Append p and checkbox to li
+  // Append p and trashcan to li
   li.appendChild(para);
-  li.appendChild(checkbox);
+  li.appendChild(trashcan);
 
   // Append li to to-do-list
   toDoList.appendChild(li);
@@ -64,6 +66,7 @@ function completeTask() {
   for (let i = 0; i < toDoText.length; i++){
     toDoText[i].addEventListener('click', () => {
         toDoText[i].style.textDecoration = 'line-through';
+        triggerConfetti();
     });
   }
 }
@@ -81,6 +84,17 @@ function deleteTask() {
 
 // add task button
 addTaskBttn.addEventListener('click', addTask);
+
+// confetti function
+function triggerConfetti() {
+    const config = {
+        particleCount: 100,
+        spread: 160,
+        startVelocity: 40,
+        decay: 0.9
+    };
+    confetti(config);
+}
 
 // Call completeTask initially
 completeTask();

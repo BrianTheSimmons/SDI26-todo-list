@@ -7,17 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="./style.css">
-  <title>To-Do-List</title>
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/2909f2d781.js" crossorigin="anonymous"></script>
+  <title>To-Do List</title>
 </head>
 <body>
   <div class="container">
-    <h1>To-Do-List</h1>
+    <h1>To-Do List</h1>
     <ul id="to-do-list">
       <li class="to-do">
         <!-- Check off to-do by clicking text -->
          <p class="to-do-text">Feed the cat</p>
          <!-- Delete to-do -->
-         <input type="checkbox" class="delete">
+        <i class="fa-solid fa-trash delete"></i>
       </li>
     </ul>
     <input type="text" id="task-input" placeholder="Add new task..."/>
